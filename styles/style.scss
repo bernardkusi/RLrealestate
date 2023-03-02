@@ -1,0 +1,341 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Niramit', sans-serif;
+}
+
+$secondary:#4a3434;
+$primary:crimson;
+$text:rgb(56, 56, 56);
+
+
+@import './reusables';
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&display=swap');
+
+header{
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2rem 3rem;
+        align-items: flex-end;
+        height: 85px;
+        background: $secondary;
+       
+        .logo{
+            text-decoration: none;
+            color: #fff;
+            font-size: 2.2rem;
+            font-weight: 700;
+            align-self: center;
+            font-family: 'Abhaya Libre', serif;
+        }
+
+        ul{
+            display: flex;
+            gap: 1.7rem;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+                transition: all .4s;
+                
+                &:hover{
+                    color: crimson;
+                }
+            }
+        }
+    }
+
+    .nav2{
+        background: #fff;
+        display: flex;
+        height: 45px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 .3rem rgba(0, 0, 0, 0.255);
+
+        div{
+
+            display: flex;
+            gap: 3rem;
+            
+        ul{
+            display: flex;
+            gap: 1rem;
+
+            a{
+                color: grey;
+                text-decoration: none;
+                transition: all .4s;
+
+                &:hover{
+                    color: $primary;
+                }
+
+                i{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        }
+    }
+}
+
+main{
+    #hero{
+        padding: 6rem 7rem;
+        background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url('../gallery/hero.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+
+        h1{
+            font-size: 5.6rem;
+            font-weight: 800;
+            color: #fff;
+            font-family: 'Abhaya Libre', serif;
+        }
+
+        h3{
+            font-size: 1.6rem;
+            max-width: 700px;
+            color: lighten($primary,35);
+            line-height: 150%;
+        }
+
+    }
+
+    #about{
+        .aboutflex{
+            display: flex;
+            gap: 3rem;
+            padding: 3rem 0 0;
+            align-items: center;
+            justify-content: space-evenly;
+            // background: rgb(253, 242, 242);
+
+            p{
+                max-width: 550px;
+                font-size: 1.2rem;
+            }
+
+            .aboutimage{
+                width: 500px;
+                height: 450px;
+                background: lightgrey;
+                border-radius: 35%;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    #services{
+        .serviceflex{
+            padding: 3rem 0 0;
+            display: flex;
+            gap: 2rem;
+            justify-content: space-evenly;
+
+          .service{
+            width: 250px;
+            .serviceimage{
+                height: 170px;
+                background: lightgrey;
+                border-radius: 35%;
+                margin: 1rem 0;
+
+                img{
+                    width: 100%;
+                    height: 200px;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .servicename{
+                text-align: center;
+                color: grey;
+                font-size: 1.1rem;
+            }
+          }
+        }
+    }
+
+    #properties{
+        .propertygrid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 2rem;
+            justify-content: space-between;
+            padding: 4rem 0 0;
+
+            .property{
+                .propertyimage{
+                    height: 250px;
+                    background: lightgrey;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .propertydetails{
+                    padding: 1rem 0;
+                    .propertyname{
+                        color: $primary;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                    }
+
+                    .sale{
+                        background: rgb(13, 165, 13);
+                        display: inline-block;
+                        color: #fff;
+                        padding: 0 .7rem;
+                        border-radius: .5rem;
+                    }
+
+                    .propertyprice{
+                        color: $text;
+                        font-size: .95rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #contact{
+        background: linear-gradient(rgba(225, 225, 225, 0.7),rgba(225, 225, 225, 0.7)), url('../gallery/contact.jpg');
+        background-size: cover;
+        background-position: center;
+        .form{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 1100px;
+            background: #fff;
+            box-shadow: 0 0 .3rem rgba(0, 0, 0, 0.189);
+            padding: 3rem 1.5rem;
+            border-radius: .5rem;
+            margin: 3rem 0 1rem;
+
+            .label{
+                text-align: center;
+                font-size: 1.6rem;
+                color: $secondary;
+                font-weight: 600;
+                font-family: 'Abhaya Libre', serif;
+                padding: 1rem 0;
+            }
+
+            .click{
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .control{
+                display: flex;
+                flex-direction: column-reverse;
+                gap: .3rem;
+                width: 50%;
+
+                label{
+                    color: grey;font-weight: 600;
+                }
+
+                input,textarea{
+                    border: 1px solid lightgrey;
+                    padding: .6rem 1rem;
+                    border-radius: .2rem;
+                    outline: none;
+                }
+            }
+
+            .message{
+                width: 100%;
+                margin-top: 2rem;
+                textarea{
+                    resize: none;
+                    height: 8rem;
+                }
+            }
+
+            div{
+                display: flex;gap: 2rem;
+            }
+        }
+    }
+}
+
+footer{
+    background: #7c7c7c;
+    padding: 7rem 5rem;
+    position: relative;
+
+    div{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 1200px;
+        display: flex;
+        gap: 3rem;
+        justify-content: space-between;
+        align-items: center;
+
+        p{
+            max-width: 650px;
+            align-self: flex-start;
+            color: #fff;
+
+            span{
+                color: $primary !important;
+            }
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 0rem;
+            align-items: center;
+
+            a{
+                text-decoration: none;
+                color: #fff;
+                transition: all .4s;
+
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .copy{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 2rem;
+        color: #fff;
+        width: max-content;
+        font-weight: 300;
+        font-size: .85rem;
+    }
+}
