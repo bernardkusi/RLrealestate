@@ -1,0 +1,173 @@
+@media (max-width:1080px) {
+    #hero{
+        padding: 6rem 5rem !important;
+
+        h1{
+            font-size: 4.6rem !important;
+        }
+
+        h3{
+            font-size: 1.3rem !important;
+        }
+
+    }
+
+    #about{
+        .aboutflex{
+            flex-direction: column;
+
+            .aboutimage,.abouttext{
+                width: 90%;
+                max-width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width:960px) {
+
+    .bars{
+        display: block !important;
+    }
+
+    header{
+        nav{
+            ul{
+                display: none !important;
+            }
+        }
+
+        .nav2{
+            &.active{
+                height: auto;
+
+                &>div{
+                    flex-direction: column ;
+                    padding: 1.5rem 1rem;
+                    width: 100%;
+                    gap: 2rem !important;
+    
+    
+                    ul:nth-child(1){
+                        align-self: center;
+                    }
+    
+                    ul:nth-child(3){
+                        // background: red;
+                        display: flex;
+                        flex-direction: column !important;
+                        align-self: flex-start ;
+                    }
+    
+                    ul:nth-child(2){
+                        align-self: center !important;
+                    }
+                }
+            }
+
+          
+        }
+    }
+
+    .page{
+        padding: 6rem 1rem 1rem;
+    }
+
+    #hero{
+        padding: 6rem 3rem !important;
+
+        h1{
+            font-size: 3.8rem !important;
+        }
+
+        h3{
+            font-size: 1.2rem !important;
+        }
+
+    }
+
+    #properties{
+        .propertygrid{
+            grid-template-columns: repeat(2,1fr) !important;
+        }
+    }
+
+    #contact{
+        div{
+            flex-direction: column;
+
+            .control{
+                width: 100% !important;
+            }
+        }
+    }
+
+    footer{
+        div{
+            flex-direction: column;
+            
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .bars{
+        top: 4.7rem !important;
+    }
+
+    header{
+        nav{
+            height: 65px !important;
+        }
+    }
+
+    .page{
+            padding: 6rem .5rem 1rem !important;
+        
+            .heading{
+                font-size: 2.2rem;
+            }
+    }
+
+    #hero{
+        padding: 6rem 2rem !important;
+
+        h1{
+            font-size: 3.6rem !important;
+        }
+
+        h3{
+            font-size: 1.15rem !important;
+        }
+
+    }
+
+    #about{
+        .aboutflex{
+            .aboutimage{
+                height: calc(230px + 30vw) !important;
+            }
+        }
+    }
+
+    #properties{
+        .propertygrid{
+            grid-template-columns: repeat(1,1fr) !important;
+        }
+    }
+
+    header{
+        .nav2{
+            ul:nth-child(2){
+                display: none;
+            }
+        }
+    }
+
+    footer{
+        padding: 7rem 2rem !important;
+    }
+}

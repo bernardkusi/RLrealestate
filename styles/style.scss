@@ -11,8 +11,45 @@ $text:rgb(56, 56, 56);
 
 
 @import './reusables';
+@import './media';
 @import url('https://fonts.googleapis.com/css2?family=Niramit:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&display=swap');
+
+
+.bars{
+    position: fixed;
+    width: 23px;
+    display: block;
+    height: 20px;
+    // background: red;
+    left: 1.5rem;
+    top: 6.2rem;
+    z-index: 11;
+    display: none;
+
+    .bar{
+        width: 100%;
+        height: 3px;
+        background: $secondary;
+        border-radius: 2px;
+        position: relative;
+
+        &::before,&::after{
+            position: absolute;
+            width: 85%;
+            height: 3px;
+            content: "";
+            background: $secondary;
+            top: 8px;
+            border-radius: 2px;
+        }
+
+        &::after{
+            width: 70%;
+            top: 17px;
+        }
+    }
+}
 
 header{
     position: sticky;
@@ -27,6 +64,7 @@ header{
         align-items: flex-end;
         height: 85px;
         background: $secondary;
+        
        
         .logo{
             text-decoration: none;
@@ -60,6 +98,12 @@ header{
         align-items: center;
         justify-content: center;
         box-shadow: 0 0 .3rem rgba(0, 0, 0, 0.255);
+        position: relative;
+
+        ul:nth-child(3){
+            display: none;
+        }
+
 
         div{
 
@@ -124,7 +168,7 @@ main{
             // background: rgb(253, 242, 242);
 
             p{
-                max-width: 550px;
+                max-width: 50%;
                 font-size: 1.2rem;
             }
 
@@ -148,8 +192,9 @@ main{
         .serviceflex{
             padding: 3rem 0 0;
             display: flex;
-            gap: 2rem;
+            gap: 1rem;
             justify-content: space-evenly;
+            flex-wrap: wrap;
 
           .service{
             width: 250px;
@@ -286,7 +331,7 @@ main{
 }
 
 footer{
-    background: #7c7c7c;
+    background: #222222;
     padding: 7rem 5rem;
     position: relative;
 
