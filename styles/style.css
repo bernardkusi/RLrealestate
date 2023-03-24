@@ -48,7 +48,7 @@
     font-size: 4.6rem !important;
   }
   #hero h3 {
-    font-size: 1.3rem !important;
+    font-size: 1.2rem !important;
   }
   #about .aboutflex {
     flex-direction: column;
@@ -97,7 +97,7 @@
     font-size: 3.8rem !important;
   }
   #hero h3 {
-    font-size: 1.2rem !important;
+    font-size: 1.15rem !important;
   }
   #properties .propertygrid {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -135,7 +135,7 @@
     font-size: 3.6rem !important;
   }
   #hero h3 {
-    font-size: 1.15rem !important;
+    font-size: 1.05rem !important;
   }
   #about .aboutflex .aboutimage {
     height: calc(230px + 30vw) !important;
@@ -263,10 +263,10 @@ main #hero h1 {
   font-family: "Abhaya Libre", serif;
 }
 main #hero h3 {
-  font-size: 1.6rem;
+  font-size: 1.35rem;
   max-width: 700px;
   color: #f7abba;
-  line-height: 150%;
+  line-height: 130%;
 }
 main #about .aboutflex {
   display: flex;
@@ -278,6 +278,7 @@ main #about .aboutflex {
 main #about .aboutflex p {
   max-width: 50%;
   font-size: 1.2rem;
+  line-height: 140%;
 }
 main #about .aboutflex .aboutimage {
   width: 500px;
@@ -434,6 +435,7 @@ footer div p {
   max-width: 650px;
   align-self: flex-start;
   color: #fff;
+  line-height: 140%;
 }
 footer div p span {
   color: crimson !important;

@@ -150,10 +150,10 @@ main{
         }
 
         h3{
-            font-size: 1.6rem;
+            font-size: 1.35rem;
             max-width: 700px;
             color: lighten($primary,35);
-            line-height: 150%;
+            line-height: 130%;
         }
 
     }
@@ -170,6 +170,7 @@ main{
             p{
                 max-width: 50%;
                 font-size: 1.2rem;
+                line-height: 140%;
             }
 
             .aboutimage{
@@ -350,6 +351,7 @@ footer{
             max-width: 650px;
             align-self: flex-start;
             color: #fff;
+            line-height: 140%;
 
             span{
                 color: $primary !important;
