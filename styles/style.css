@@ -13,7 +13,7 @@
   border: none;
   outline: none;
   margin: 1rem 0;
-  background: #4a3434;
+  background: #ed365b;
   color: #fff;
   position: relative;
   display: inline-block;
@@ -81,6 +81,8 @@
     display: flex;
     flex-direction: column !important;
     align-self: flex-start;
+    gap: 1.8rem;
+    padding-top: 1rem;
   }
   header .nav2.active > div ul:nth-child(2) {
     align-self: center !important;
@@ -161,7 +163,7 @@
 .bars .bar {
   width: 100%;
   height: 3px;
-  background: #4a3434;
+  background: #515151;
   border-radius: 2px;
   position: relative;
 }
@@ -170,7 +172,7 @@
   width: 85%;
   height: 3px;
   content: "";
-  background: #4a3434;
+  background: #515151;
   top: 8px;
   border-radius: 2px;
 }
@@ -187,11 +189,11 @@ header {
 }
 header nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 2rem 3rem;
   align-items: flex-end;
   height: 85px;
-  background: #4a3434;
+  background: #515151;
 }
 header nav .logo {
   text-decoration: none;
@@ -293,7 +295,7 @@ main #about .aboutflex .aboutimage img {
 main #services .serviceflex {
   padding: 3rem 0 0;
   display: flex;
-  gap: 1rem;
+  gap: 3rem 1rem;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
@@ -373,10 +375,10 @@ main #contact .form {
 main #contact .form .label {
   text-align: center;
   font-size: 1.6rem;
-  color: #4a3434;
+  color: #515151;
   font-weight: 600;
   font-family: "Abhaya Libre", serif;
-  padding: 1rem 0;
+  padding: 1rem 0 2rem;
 }
 main #contact .form .click {
   position: relative;
@@ -392,6 +394,7 @@ main #contact .form .control {
 main #contact .form .control label {
   color: grey;
   font-weight: 600;
+  padding-bottom: 0.4rem;
 }
 main #contact .form .control input, main #contact .form .control textarea {
   border: 1px solid lightgrey;
@@ -438,7 +441,7 @@ footer div p span {
 footer div ul {
   display: flex;
   flex-direction: column;
-  gap: 0rem;
+  gap: 0.3rem;
   align-items: center;
 }
 footer div ul a {

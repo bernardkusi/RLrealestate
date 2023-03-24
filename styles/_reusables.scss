@@ -4,7 +4,7 @@
     border: none;
     outline: none;
     margin: 1rem 0;
-    background: #4a3434;
+    background:  lighten($primary,10);
     color: #fff;
     position: relative;
     display: inline-block;
@@ -14,7 +14,7 @@
     cursor: pointer;
 
     &:hover{
-        background: crimson;
+        background: $primary;
     }
 }
 

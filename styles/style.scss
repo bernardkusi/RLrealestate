@@ -5,7 +5,7 @@
     font-family: 'Niramit', sans-serif;
 }
 
-$secondary:#4a3434;
+$secondary:#515151;
 $primary:crimson;
 $text:rgb(56, 56, 56);
 
@@ -59,7 +59,7 @@ header{
 
     nav{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding: 2rem 3rem;
         align-items: flex-end;
         height: 85px;
@@ -192,7 +192,7 @@ main{
         .serviceflex{
             padding: 3rem 0 0;
             display: flex;
-            gap: 1rem;
+            gap: 3rem 1rem;
             justify-content: space-evenly;
             flex-wrap: wrap;
 
@@ -287,7 +287,7 @@ main{
                 color: $secondary;
                 font-weight: 600;
                 font-family: 'Abhaya Libre', serif;
-                padding: 1rem 0;
+                padding: 1rem 0 2rem;
             }
 
             .click{
@@ -304,6 +304,7 @@ main{
 
                 label{
                     color: grey;font-weight: 600;
+                    padding-bottom: .4rem;
                 }
 
                 input,textarea{
@@ -358,7 +359,7 @@ footer{
         ul{
             display: flex;
             flex-direction: column;
-            gap: 0rem;
+            gap: .3rem;
             align-items: center;
 
             a{
