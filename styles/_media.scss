@@ -30,6 +30,12 @@
         display: block !important;
     }
 
+    .banner{
+        h3{
+            font-size: 2rem;
+        }
+    }
+
     header{
         nav{
             ul{
@@ -120,6 +126,13 @@
         top: 4.7rem !important;
     }
 
+    .banner{
+        h3{
+            font-size: 1.8rem;
+        }
+    }
+
+
     header{
         nav{
             height: 65px !important;
@@ -138,11 +151,11 @@
         padding: 6rem 2rem !important;
 
         h1{
-            font-size: 3.6rem !important;
+            font-size: 3.3rem !important;
         }
 
         h3{
-            font-size: 1.05rem !important;
+            font-size: .98rem !important;
         }
 
     }
@@ -151,6 +164,10 @@
         .aboutflex{
             .aboutimage{
                 height: calc(230px + 30vw) !important;
+            }
+
+            .abouttext{
+                font-size: .95rem;
             }
         }
     }
@@ -171,5 +188,11 @@
 
     footer{
         padding: 7rem 2rem !important;
+
+       div{
+        p{
+            font-size: .95rem;
+        }
+       }
     }
 }

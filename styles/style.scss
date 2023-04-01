@@ -84,7 +84,7 @@ header{
                 color: #fff;
                 transition: all .4s;
                 
-                &:hover{
+                &:hover,&.active{
                     color: crimson;
                 }
             }
@@ -119,7 +119,7 @@ header{
                 text-decoration: none;
                 transition: all .4s;
 
-                &:hover{
+                &:hover,&.active{
                     color: $primary;
                 }
 

@@ -26,12 +26,58 @@
   background: crimson;
 }
 
+.banner {
+  height: calc(200px + 10vw);
+  background: lightgrey;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.banner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(70%);
+}
+.banner h3 {
+  font-size: 2.35rem;
+  color: crimson;
+  margin-left: calc(1rem + 5vw);
+  padding: 0.5rem 7rem 0.5rem 1.5rem;
+  z-index: 1;
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.801), rgba(255, 255, 255, 0.352));
+}
+
 .page {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   padding: 6rem 3rem 1rem;
   max-width: 1300px;
+}
+.page .abouttext {
+  font-size: 1.1rem;
+}
+.page .sectionheading {
+  color: crimson;
+  font-size: 1.5rem;
+  padding: 1.3rem 0rem;
+}
+.page .contactinfo ul {
+  padding-top: 1rem;
+}
+.page .contactinfo ul:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.page .contactinfo ul a {
+  color: crimson;
+  font-weight: 600;
+  text-decoration: none;
 }
 .page .heading {
   text-align: center;
@@ -61,6 +107,9 @@
 @media (max-width: 960px) {
   .bars {
     display: block !important;
+  }
+  .banner h3 {
+    font-size: 2rem;
   }
   header nav ul {
     display: none !important;
@@ -119,6 +168,9 @@
   .bars {
     top: 4.7rem !important;
   }
+  .banner h3 {
+    font-size: 1.8rem;
+  }
   header nav {
     height: 65px !important;
   }
@@ -132,13 +184,16 @@
     padding: 6rem 2rem !important;
   }
   #hero h1 {
-    font-size: 3.6rem !important;
+    font-size: 3.3rem !important;
   }
   #hero h3 {
-    font-size: 1.05rem !important;
+    font-size: 0.98rem !important;
   }
   #about .aboutflex .aboutimage {
     height: calc(230px + 30vw) !important;
+  }
+  #about .aboutflex .abouttext {
+    font-size: 0.95rem;
   }
   #properties .propertygrid {
     grid-template-columns: repeat(1, 1fr) !important;
@@ -148,6 +203,9 @@
   }
   footer {
     padding: 7rem 2rem !important;
+  }
+  footer div p {
+    font-size: 0.95rem;
   }
 }
 .bars {
@@ -212,7 +270,7 @@ header nav ul a {
   color: #fff;
   transition: all 0.4s;
 }
-header nav ul a:hover {
+header nav ul a:hover, header nav ul a.active {
   color: crimson;
 }
 header .nav2 {
@@ -240,7 +298,7 @@ header .nav2 div ul a {
   text-decoration: none;
   transition: all 0.4s;
 }
-header .nav2 div ul a:hover {
+header .nav2 div ul a:hover, header .nav2 div ul a.active {
   color: crimson;
 }
 header .nav2 div ul a i {
